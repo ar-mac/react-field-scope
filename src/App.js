@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
+
 import './App.css';
+import ReduxFormWithScoping from './components/ReduxFormWithScoping';
 
 class App extends Component {
+  submit = (formData) => {
+    console.log(`formData: `, formData);
+  };
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <ReduxFormWithScoping onSubmit={this.submit}/>
       </div>
     );
   }
