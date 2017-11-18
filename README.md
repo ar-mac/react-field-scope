@@ -1,5 +1,17 @@
 * Title of the project
+  * react-scope-form-fields
 * Brief description
+* Use cases
+  * scoping fields with lock on empty scope
+  * scoping fields without lock on empty scope
+  * mount scoped field on scope change (for data load and other setup on componentDidMount)
+  * reset scoped field to empty value or result of the function
+* Possible use cases
+  * Handling for multi select scope and scoped
+  * Allow preventing unmounting & mounting on scope change
+  * Add confirmation of scope change
+  * Handle children with names nested via `.`, `[somevalue]`, `[]`
+  * Provide scope value to the child so it can use it for initialization 
 * How to get the project running locally
 * Running the linter
 * Running the test suite
@@ -44,12 +56,17 @@ https://www.apollographql.com/docs/react/basics/queries.html#default-result-prop
 
 ## TODO
 
+* add examples of different config options for ScopeFieldForReduxForm
+* check posibility to implement HOC for scoping setup
+  * (possibly this might be a way to) make ScopeFieldForReduxForm more resilient
+
 * fillup readme info
   * decide on package name (research what people look for)
-* add bootstrap to demo app
-* add examples of different config options for ScopeFieldForReduxForm
-* figure out way to make ScopeFieldForReduxForm more resilient
 * deploy demo app on github pages
+* add handling for react form
 * add handling for regular form
 * add handling for formik
-* add handling for react form
+* check if correct data is persisted in store and gets submitted 
+
+## DONE
+* add bootstrap to demo app
